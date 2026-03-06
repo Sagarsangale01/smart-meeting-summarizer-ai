@@ -10,17 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
       - name: Deploy to EC2
-        uses: appleboy/ssh-action@v0.1.10
+        uses: appleboy/ssh-action@v1
+
         with:
           host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
+          username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
+
           script: |
-            cd /home/ubuntu/backend
+            cd ~/smart-meeting-summarizer-ai/backend
             git pull origin main
             npm install
-            pm2 restart backend
+            pm2 restart server
