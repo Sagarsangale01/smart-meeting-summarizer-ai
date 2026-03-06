@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1772725971320,
+    "date": "2026-03-05T15:52:51.320Z",
+    "transcript": "[09:00] Sarah (PM): Let's start the sprint review. This is Sprint 14, two-week cycle.\n[09:02] Mark (Dev): Completed: user authentication module, password reset flow, and session management.\n[09:06] Lisa (Design): Dashboard redesign is done — stakeholders approved the new color system.\n[09:10] Tom (QA): Found 3 critical bugs in the payment flow. All are now fixed and verified.\n[09:14] Sarah: We're pushing the mobile app release to August 15th to allow more QA time.\n[09:18] Mark: Action: Write uni",
+    "summary": {
+      "topics": [
+        "Sprint 14 review",
+        "User authentication module completion",
+        "Dashboard redesign approval",
+        "Payment flow bug fixes",
+        "Mobile app release date adjustment",
+        "Switching from REST to GraphQL for mobile API",
+        "CI/CD pipeline budget approval"
+      ],
+      "decisions": [
+        "We are switching from REST to GraphQL for the mobile API.",
+        "Budget approved for new CI/CD pipeline."
+      ],
+      "action_items": [
+        {
+          "task": "Write unit tests for auth module",
+          "owner": "Mark",
+          "deadline": "July 28"
+        },
+        {
+          "task": "Finalize design handoff document",
+          "owner": "Lisa",
+          "deadline": "July 25"
+        },
+        {
+          "task": "Run full regression suite before release",
+          "owner": "Tom",
+          "deadline": "Aug 10"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1772725553784,
+    "date": "2026-03-05T15:45:53.784Z",
+    "transcript": "[09:00] Scrum Master (Priya): Good morning everyone. Let's do quick standups.\n[09:01] Dev 1 (Raj): Yesterday: finished the login API endpoint. Today: starting on profile page. Blocker: need design specs from Lisa.\n[09:03] Dev 2 (Alex): Yesterday: fixed the database connection timeout bug. Today: writing integration tests. No blockers.\n[09:05] Lisa (Design): Yesterday: completed mobile wireframes. Today: presenting to PM. Blocker: need final brand colors from client.\n[09:07] QA (Tom): Yesterday: ",
+    "summary": {
+      "topics": [
+        "Login API endpoint completion",
+        "Profile page development",
+        "Mobile wireframes presentation",
+        "Checkout flow testing"
+      ],
+      "decisions": [
+        "We'll skip Friday's standup due to public holiday."
+      ],
+      "action_items": [
+        {
+          "task": "Lisa to share profile page specs with Raj",
+          "owner": "Lisa",
+          "deadline": "Today EOD"
+        },
+        {
+          "task": "Client to confirm brand colors",
+          "owner": "PM",
+          "deadline": "Tomorrow"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1772725356330,
+    "date": "2026-03-05T15:42:36.330Z",
+    "transcript": "[09:00] Scrum Master (Priya): Good morning everyone. Let's do quick standups.\n[09:01] Dev 1 (Raj): Yesterday: finished the login API endpoint. Today: starting on profile page. Blocker: need design specs from Lisa.\n[09:03] Dev 2 (Alex): Yesterday: fixed the database connection timeout bug. Today: writing integration tests. No blockers.\n[09:05] Lisa (Design): Yesterday: completed mobile wireframes. Today: presenting to PM. Blocker: need final brand colors from client.\n[09:07] QA (Tom): Yesterday: ",
+    "summary": {
+      "topics": [
+        "Standup updates from team members",
+        "Progress on various tasks",
+        "Blockers faced by team members"
+      ],
+      "decisions": [
+        "We'll skip Friday's standup due to public holiday."
+      ],
+      "action_items": [
+        {
+          "task": "Lisa to share profile page specs with Raj.",
+          "owner": "Lisa",
+          "deadline": "Today EOD"
+        },
+        {
+          "task": "Client to confirm brand colors.",
+          "owner": "PM",
+          "deadline": "Tomorrow"
+        }
+      ]
+    }
+  }
+]
