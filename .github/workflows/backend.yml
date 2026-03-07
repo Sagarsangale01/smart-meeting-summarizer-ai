@@ -10,30 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Deploy via SSH
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ secrets.EC2_HOST }} # EC2 public IP or DNS
-          username: ${{ secrets.EC2_USER }} # Typically 'ubuntu' for Ubuntu AMI
-          key: ${{ secrets.EC2_SSH_KEY }} # Full private key (PEM/OpenSSH)
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
-          verbose: true # Enables SSH debug output
+          debug: true
           script: |
-            # Navigate to backend folder
             cd ~/smart-meeting-summarizer-ai/backend
-
-            # Pull latest code
-            git reset --hard origin/main
-            git clean -fd
             git pull origin main
-
-            # Install/update dependencies
             npm install
-
-            # Restart the backend server with PM2
             pm2 restart server || pm2 start server.js --name server
