@@ -2,15 +2,15 @@
 
 ```text
 /
+├── doc/                  # Technical Documentation (Architecture, AI, AWS)
+│   ├── AWS_DEPLOYMENT.md # Cloud Deployment Strategy
+│   └── ...               # Other technical details
 ├── frontend/             # React Application
-│   ├── src/components/   # Reusable UI elements (Header, History, etc.)
-│   ├── src/pages/        # Main Dashboard view
+│   ├── src/components/   # Reusable UI elements
 │   └── src/services/     # API integration logic
-├── backend/              # Node.js Server
-│   ├── controllers/      # Request handlers
-│   ├── services/         # AI and RAG logic
-│   └── data/             # Persistent JSON storage
-└── README.md             # Main project instructions
+└── backend/              # Node.js Server
+    ├── controllers/      # Request handlers
+    └── services/         # AI and RAG logic
 ```
 
 ---
